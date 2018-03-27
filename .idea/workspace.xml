@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5a0e2785-8971-4b1a-8ae5-943777090c80" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter.iml" afterPath="$PROJECT_DIR$/CurrencyConverter.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -275,12 +273,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522185760173</updated>
-      <workItem from="1522185764058" duration="864000" />
+      <workItem from="1522185764058" duration="942000" />
     </task>
+    <task id="LOCAL-00001" summary="Zadanie2 | add menu printer">
+      <created>1522186650805</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522186650805</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="864000" />
+    <option name="totallyTimeSpent" value="942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -320,6 +326,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Zadanie2 | add menu printer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie2 | add menu printer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
