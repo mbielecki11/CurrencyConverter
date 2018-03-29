@@ -1,6 +1,8 @@
 package com.mbielecki.currencyconverter.commands;
 
 
+import netscape.javascript.JSObject;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -11,6 +13,7 @@ import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
 import javax.json.JsonValue;
+
 
 class JSonLoader implements Commands {
     public static final String JSON_FILE="/home/mbielecki1/Desktop/Homework/CurrencyConverter/currencies.json";
@@ -45,9 +48,25 @@ class JSonLoader implements Commands {
             e.printStackTrace();
         }
         JsonObject innerJsonObject = jsonObject.getJsonObject("baseCurrency");
+
+
+        System.out.println("------BASE CURRENCY--------");
+
         System.out.println(innerJsonObject.getString("code"));
         System.out.println(innerJsonObject.getString("name"));
-        //System.out.println(innerJsonObject.getString("value"));
+        System.out.println(innerJsonObject.get("value").toString());
+
+        System.out.println("------OTHERS CURRENCIES--------");
+
+        JsonArray jsonArray = (JsonArray) jsonObject.get("currencies");
+
+        for (int i = 0; i < jsonArray.size(); i++) {
+            System.out.println(jsonArray.getJsonObject(i).getString("code"));
+            System.out.println(jsonArray.getJsonObject(i).getString("name"));
+            System.out.println(jsonArray.getJsonObject(i).get("value").toString());
+            System.out.println(":");
+
+        }
 
 
 
