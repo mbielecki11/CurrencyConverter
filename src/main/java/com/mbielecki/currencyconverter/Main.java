@@ -19,10 +19,10 @@ import javax.json.JsonValue;
 class Main {
     private static CommandsTranslator commands = CommandsTranslator.init();
 
-    public static final String JSON_FILE="/home/mbielecki1/Desktop/Homework/CurrencyConverter/currencies.json";
+    //public static final String JSON_FILE="/home/mbielecki1/Desktop/Homework/CurrencyConverter/currencies.json";
     public static void main(String[] args) {
 
-            InputStream fis = null;
+         /*   InputStream fis = null;
             try {
                 fis = new FileInputStream(JSON_FILE);
             } catch (FileNotFoundException e) {
@@ -32,12 +32,6 @@ class Main {
 
             //create JsonReader object
             JsonReader jsonReader = Json.createReader(fis);
-
-            /**
-             * We can create JsonReader from Factory also
-             JsonReaderFactory factory = Json.createReaderFactory(null);
-             jsonReader = factory.createReader(fis);
-             */
 
             //get JsonObject from JsonReader
             JsonObject jsonObject = jsonReader.readObject();
@@ -54,9 +48,9 @@ class Main {
             System.out.println(innerJsonObject.getString("code"));
             System.out.println(innerJsonObject.getString("name"));
             //System.out.println(innerJsonObject.getString("value"));
+*/
 
-
-       /* boolean finished = false;
+        boolean finished = false;
         Scanner reader = new Scanner(System.in);
 
         System.out.println("Aby zakończyć, wpisz 'exit'.\n");
@@ -72,6 +66,6 @@ class Main {
             commands.execute(input);
             System.out.println();
         }
-        reader.close();*/
+        reader.close();
     }
 }
