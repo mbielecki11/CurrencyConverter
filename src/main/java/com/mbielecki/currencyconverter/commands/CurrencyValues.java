@@ -43,7 +43,7 @@ class CurrencyValues implements Commands {
             System.out.println(JSonLoader.cu.getCode()[i]);
             System.out.println(JSonLoader.cu.getName()[i]);
             System.out.println(JSonLoader.cu.getValue()[i]);
-        
+
         }
 /*
         System.out.println(innerJsonObject.getString("code"));
