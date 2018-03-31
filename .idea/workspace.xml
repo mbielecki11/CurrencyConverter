@@ -458,7 +458,7 @@
       <option name="presentableId" value="Default" />
       <updated>1522185760173</updated>
       <workItem from="1522185764058" duration="4440000" />
-      <workItem from="1522355294223" duration="19678000" />
+      <workItem from="1522355294223" duration="19686000" />
     </task>
     <task id="LOCAL-00001" summary="Zadanie2 | add menu printer">
       <created>1522186650805</created>
@@ -516,11 +516,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522463370960</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Zadanie2 | final version">
+      <created>1522463379460</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1522463379460</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24118000" />
+    <option name="totallyTimeSpent" value="24126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
