@@ -3,6 +3,7 @@ package com.mbielecki.currencyconverter.commands;
 
 import netscape.javascript.JSObject;
 
+import java.util.Scanner;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -16,36 +17,36 @@ import javax.json.JsonValue;
 
 
 class JSonLoader implements Commands {
-    public static final String JSON_FILE="/home/mbielecki1/Desktop/Homework/CurrencyConverter/currencies.json";
+    public String JSON_FILE="/home/mbielecki1/Desktop/Homework/CurrencyConverter/currencies.json";
     @Override
     public void execute() {
+
+        System.out.println("Please give path to json (default = /home/mbielecki1/Desktop/Homework/CurrencyConverter/currencies.json)");
+        Scanner reader = new Scanner(System.in);
+        String input = reader.next();
+        if(!input.equals("default") ) {
+            JSON_FILE = input;
+        }
+
         InputStream fis = null;
         try {
             fis = new FileInputStream(JSON_FILE);
         } catch (FileNotFoundException e) {
-            System.out.println("nie znalazł pliku!!!!!!!!!!!");
-            e.printStackTrace();
+            System.out.println("There is no json file");
+            return;
         }
 
         //create JsonReader object
         JsonReader jsonReader = Json.createReader(fis);
 
-        /**
-         * We can create JsonReader from Factory also
-         JsonReaderFactory factory = Json.createReaderFactory(null);
-         jsonReader = factory.createReader(fis);
-         */
-
         //get JsonObject from JsonReader
         JsonObject jsonObject = jsonReader.readObject();
 
-        //we can close IO resource and JsonReader now
         jsonReader.close();
         try {
             fis.close();
         } catch (IOException e) {
-            System.out.println("Nie zamknal pliku");
-            e.printStackTrace();
+            System.out.println("ERROR. File not close.");
         }
         JsonObject innerJsonObject = jsonObject.getJsonObject("baseCurrency");
 

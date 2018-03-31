@@ -19,36 +19,8 @@ import javax.json.JsonValue;
 class Main {
     private static CommandsTranslator commands = CommandsTranslator.init();
 
-    //public static final String JSON_FILE="/home/mbielecki1/Desktop/Homework/CurrencyConverter/currencies.json";
-    public static void main(String[] args) {
+     public static void main(String[] args) {
 
-         /*   InputStream fis = null;
-            try {
-                fis = new FileInputStream(JSON_FILE);
-            } catch (FileNotFoundException e) {
-                System.out.println("nie znalazł pliku!!!!!!!!!!!");
-                e.printStackTrace();
-            }
-
-            //create JsonReader object
-            JsonReader jsonReader = Json.createReader(fis);
-
-            //get JsonObject from JsonReader
-            JsonObject jsonObject = jsonReader.readObject();
-
-            //we can close IO resource and JsonReader now
-            jsonReader.close();
-            try {
-                fis.close();
-            } catch (IOException e) {
-                System.out.println("Nie zamknal pliku");
-                e.printStackTrace();
-            }
-            JsonObject innerJsonObject = jsonObject.getJsonObject("baseCurrency");
-            System.out.println(innerJsonObject.getString("code"));
-            System.out.println(innerJsonObject.getString("name"));
-            //System.out.println(innerJsonObject.getString("value"));
-*/
 
         boolean finished = false;
         Scanner reader = new Scanner(System.in);
