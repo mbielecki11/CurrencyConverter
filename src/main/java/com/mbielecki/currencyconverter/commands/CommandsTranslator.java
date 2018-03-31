@@ -11,8 +11,8 @@ public class CommandsTranslator implements Commands {
 
         result.commands.put("menu", new MenuPrinter());
         result.commands.put("err", () -> System.out.println("Nieznana komenda! Spróbuj ponownie."));
-        result.commands.put("1", new JSonLoader());
-        //result.commands.put("2", new ConditionalStatementsPrinter());
+        result.commands.put("1", new CurrencyValues());
+        result.commands.put("2", new CurrencyConverter());
 
         result.commands.put("exit", () -> System.out.println("Dzięki za korzystanie z programu."));
 

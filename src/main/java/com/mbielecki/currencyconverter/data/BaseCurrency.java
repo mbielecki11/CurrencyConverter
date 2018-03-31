@@ -3,7 +3,7 @@ package com.mbielecki.currencyconverter.data;
 public class BaseCurrency {
     private String code;
     private String name;
-    private double value;
+    private String value;
 
     public String getCode() {
         return code;
@@ -21,11 +21,11 @@ public class BaseCurrency {
         this.name = name;
     }
 
-    public double getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(double value) {
+    public void setValue(String value) {
         this.value = value;
     }
 }

@@ -1,31 +1,31 @@
 package com.mbielecki.currencyconverter.data;
 
 public class Currencies {
-    private String code;
-    private String name;
-    private double value;
+    private String[] code;
+    private String[] name;
+    private String[] value;
 
-    public String getCode() {
+    public String[] getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(String[] code) {
         this.code = code;
     }
 
-    public String getName() {
+    public String[] getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String[] name) {
         this.name = name;
     }
 
-    public double getValue() {
+    public String[] getValue() {
         return value;
     }
 
-    public void setValue(double value) {
+    public void setValue(String[] value) {
         this.value = value;
     }
 }
