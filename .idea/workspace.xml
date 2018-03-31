@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a0e2785-8971-4b1a-8ae5-943777090c80" name="Default" comment="Zadanie2 | final version">
+    <list default="true" id="5a0e2785-8971-4b1a-8ae5-943777090c80" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbielecki/currencyconverter/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/mbielecki/currencyconverter/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbielecki/currencyconverter/commands/CommandsTranslator.java" afterPath="$PROJECT_DIR$/src/main/java/com/mbielecki/currencyconverter/commands/CommandsTranslator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbielecki/currencyconverter/commands/CurrencyConverter.java" afterPath="$PROJECT_DIR$/src/main/java/com/mbielecki/currencyconverter/commands/CurrencyConverter.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbielecki/currencyconverter/commands/CurrencyValues.java" afterPath="$PROJECT_DIR$/src/main/java/com/mbielecki/currencyconverter/commands/CurrencyValues.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mbielecki/currencyconverter/commands/JSonLoader.java" afterPath="$PROJECT_DIR$/src/main/java/com/mbielecki/currencyconverter/commands/JSonLoader.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -464,7 +458,7 @@
       <option name="presentableId" value="Default" />
       <updated>1522185760173</updated>
       <workItem from="1522185764058" duration="4440000" />
-      <workItem from="1522355294223" duration="19653000" />
+      <workItem from="1522355294223" duration="19678000" />
     </task>
     <task id="LOCAL-00001" summary="Zadanie2 | add menu printer">
       <created>1522186650805</created>
@@ -515,11 +509,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522461950340</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Zadanie2 | final version">
+      <created>1522463370960</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1522463370960</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24093000" />
+    <option name="totallyTimeSpent" value="24118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
