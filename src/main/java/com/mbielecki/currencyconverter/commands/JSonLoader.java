@@ -3,9 +3,7 @@ package com.mbielecki.currencyconverter.commands;
 
 import com.mbielecki.currencyconverter.data.BaseCurrency;
 import com.mbielecki.currencyconverter.data.Currencies;
-import netscape.javascript.JSObject;
 
-import java.util.Scanner;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,7 +13,6 @@ import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
-import javax.json.JsonValue;
 
 
 public class JSonLoader implements Commands {
@@ -31,14 +28,7 @@ public class JSonLoader implements Commands {
 
     @Override
     public void execute() {
-/*
-        System.out.println("Please give path to json (default = /home/mbielecki1/Desktop/Homework/CurrencyConverter/currencies.json)");
-        Scanner reader = new Scanner(System.in);
-        String input = reader.next();
-        if(!input.equals("default") ) {
-            JSON_FILE = input;
-        }
-*/
+
         InputStream fis = null;
         try {
             fis = new FileInputStream(JSON_FILE);
@@ -69,7 +59,6 @@ public class JSonLoader implements Commands {
         //other currencies
         JsonArray jsonArray = (JsonArray) jsonObject.get("currencies");
 
-
         String[] codes = new String[jsonArray.size()];
         String[] names = new String[jsonArray.size()];
         String[] values = new String[jsonArray.size()];
@@ -78,12 +67,6 @@ public class JSonLoader implements Commands {
             codes[i] = jsonArray.getJsonObject(i).getString("code");
             names[i] = jsonArray.getJsonObject(i).getString("name");
             values[i] = jsonArray.getJsonObject(i).get("value").toString();
-
-            //System.out.println(jsonArray.getJsonObject(i).getString("code"));
-            //System.out.println(jsonArray.getJsonObject(i).getString("name"));
-            //System.out.println(jsonArray.getJsonObject(i).get("value").toString());
-            //System.out.println(":");
-
         }
         cu.setCode(codes);
         cu.setName(names);

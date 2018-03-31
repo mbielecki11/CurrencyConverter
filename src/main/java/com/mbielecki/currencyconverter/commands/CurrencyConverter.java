@@ -20,8 +20,13 @@ class CurrencyConverter implements Commands {
         System.out.println("Please write amount of PLN");
         Scanner reader = new Scanner(System.in);
         String amountPLN = reader.next();
-        dAmountPLN = Double.parseDouble(amountPLN);
-
+        try {
+            dAmountPLN = Double.parseDouble(amountPLN);
+        }
+        catch(NumberFormatException e){
+            System.out.println("Wrong amount");
+            return;
+        }
         System.out.println("Please write target currency");
         String targetCurrency = reader.next();
 
@@ -31,8 +36,10 @@ class CurrencyConverter implements Commands {
                 amountCurrency = Double.parseDouble( JSonLoader.cu.getValue()[i]);
                 targetAmount = dAmountPLN * amountCurrency;
                 System.out.println("Target amount is: " + targetAmount.toString());
+                return;
             }
         }
+        System.out.println("There is no such currency: " + targetCurrency);
 
 
 

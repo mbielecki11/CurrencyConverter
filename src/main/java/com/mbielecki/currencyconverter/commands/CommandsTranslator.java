@@ -10,11 +10,11 @@ public class CommandsTranslator implements Commands {
         CommandsTranslator result = new CommandsTranslator();
 
         result.commands.put("menu", new MenuPrinter());
-        result.commands.put("err", () -> System.out.println("Nieznana komenda! Spróbuj ponownie."));
+        result.commands.put("err", () -> System.out.println("Try one more time."));
         result.commands.put("1", new CurrencyValues());
         result.commands.put("2", new CurrencyConverter());
 
-        result.commands.put("exit", () -> System.out.println("Dzięki za korzystanie z programu."));
+        result.commands.put("exit", () -> System.out.println("Thanks for using this software."));
 
         return result;
     }
